@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap');
+
+/* My Reset */
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+* {
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+body {
+    margin: 0 auto;
+    color: #f3f3f3;
+    background-color: #151414;
+}
+
+main {
+    max-width: 365px;
+    height: auto;
+    margin: 0 auto;
+
+    background-color: #151414;
+}
+
+main section:not(section:nth-of-type(4)) {
+    max-width: 345px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+main section:nth-of-type(1) nav {
+    margin: 0 auto;
+    width: 174px;
+    height: 383px;
+
+    background-image: url('./assets/images/image-profile-mobile.webp');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+nav h3 {
+    width: 154px;
+    text-align: center;
+    font-size: 1.5em;
+    margin: 0px auto 20px auto;
+    padding-top: 20px;
+}
+
+nav ul {
+    width: 154px;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0px auto;
+    padding: 0px;
+    z-index: 1;
+}
+
+nav ul li {
+    cursor: pointer;
+}
+
+main section:nth-of-type(1) div {
+    height: 0px;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+main section:nth-of-type(1) div img:nth-of-type(1) {         /* Rings */
+    width: 530px;
+    height: 129px;
+    position: relative;
+    transform: translate(-355px, -260px);
+    z-index: 3;
+    overflow: hidden;
+    background-image: url('./assets/images/pattern-rings.svg');
+}
+
+main section:nth-of-type(1) div img:nth-of-type(2) {        /* Circle */
+    position: relative;
+    transform: translate(280px, -260px);
+}
+
+main section:nth-of-type(1) header {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+main section:nth-of-type(1) header h2 span {
+    border-bottom: 0.25rem solid #4ee1a0;
+}
+
+main section:nth-of-type(1) p {
+    text-align: center;
+    padding: 0px 10px;
+}
+
+main section:nth-of-type(1) footer {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: bold;
+    border-bottom: 0.15rem solid #4ee1a0;
+    width: 107px;
+    margin: 0 auto 50px auto;
+}
+
+main section:nth-of-type(1) footer a {
+    color: #f3f3f3;
+    text-decoration: none;
+    padding-bottom: 5px;
+    line-height: 2.25;
+    letter-spacing: 1px;
+}
+main section:nth-of-type(1) footer a:hover {
+    color: #4ee1a0;
+}
+
+main .separator::after {
+    content: " ";
+    display: block;
+    border-bottom: 1px solid #f3f3f3;
+    width: 343px;
+    margin: 0 auto;
+}
+
+section:nth-of-type(2) h3,
+p {
+    text-align: center;
+}
+
+section:nth-of-type(2) h3:first-of-type {
+    margin-top: 40px;
+}
+
+section:nth-of-type(2) h3 {
+    font-size: 2em;
+    margin: 0;
+}
+
+section:nth-of-type(2) p {
+    margin: 0px 0px 30px 0px;
+}
+
+section:nth-of-type(2) p:last-of-type {
+    margin-bottom: 50px;
+}
+section:nth-of-type(2) {
+    overflow: hidden;
+}
+/*
+section:nth-of-type(2) > .rings-image {     
+    /* Rings */ /*
+    position: relative;
+    transform: translate(172px, -65px);
+    margin-bottom: -130px;
+    width: 530px;
+    height: 129px;
+    background-image: url('./assets/images/pattern-rings.svg');
+}
+section:nth-of-type(3) > .rings-image {     
+    /* Rings */ /*
+    position: relative;
+    transform: translate(172px, -65px);
+    margin-bottom: -120px;
+    width: 530px;
+    height: 129px;
+    background-image: url('./assets/images/pattern-rings.svg');
+}
+*/
+
+section:nth-of-type(3) header {
+    margin-top: 64.5px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+section:nth-of-type(3) header h1 {
+    font-size: 2em;
+    height: 100%;
+    margin: 0;
+}
+
+section:nth-of-type(3) header a {
+    text-decoration: none;
+    padding-bottom: 5px;
+    line-height: 2.25;
+    letter-spacing: 1px;
+    color: #f3f3f3;
+
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: bold;
+    border-bottom: 0.15rem solid #4ee1a0;
+    width: 107px;
+    margin-bottom: 40px;
+}
+section:nth-of-type(3) header a:hover {
+    color: #4ee1a0;
+}
+
+section:nth-of-type(3) div {
+    height: 398px;
+    width: 343px;
+}
+
+section:nth-of-type(3) div .background-img-project {
+    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    width: 345px;
+    height: 253px;
+    margin-top: 50px;
+}
+
+section:nth-of-type(3) div .below-img-project h3 {
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+
+section:nth-of-type(3) > div .below-img-project p {
+    text-align: left;
+    margin-top: -15px;
+}
+
+section:nth-of-type(3) > div .below-img-project p > span {
+    text-transform: uppercase;
+    margin-right: 20px;
+}
+
+section:nth-of-type(3) div .below-img-project a {
+    text-decoration: none;
+    padding-bottom: 15px;
+    line-height: 2.25;
+    letter-spacing: 1px;
+    color: #f3f3f3;
+
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: bold;
+    border-bottom: 0.15rem solid #4ee1a0;
+}
+section:nth-of-type(3) div .below-img-project a:hover {
+    color: #4ee1a0;
+}
+
+div .below-img-project>a:first-of-type {
+    margin-right: 30px;
+}
+
+section:nth-of-type(3)>div:nth-of-type(1) .background-img-project {
+    background-image: url('./assets/images/thumbnail-project-1-small.webp');
+    margin-top: 0px;
+}
+
+section:nth-of-type(3) div:nth-of-type(2) .background-img-project {
+    background-image: url('./assets/images/thumbnail-project-2-small.webp');
+}
+
+section:nth-of-type(3) div:nth-of-type(3) .background-img-project {
+    background-image: url('./assets/images/thumbnail-project-3-small.webp');
+}
+
+section:nth-of-type(3) div:nth-of-type(4) .background-img-project {
+    background-image: url('./assets/images/thumbnail-project-4-small.webp');
+}
+
+section:nth-of-type(3) div:nth-of-type(5) .background-img-project {
+    background-image: url('./assets/images/thumbnail-project-5-small.webp');
+}
+
+section:nth-of-type(3) div:nth-of-type(6) .background-img-project {
+    background-image: url('./assets/images/thumbnail-project-6-small.webp');
+}
+
+section:nth-of-type(3) div:last-of-type {
+    margin-bottom: 80px;
+}
+
+section:nth-of-type(4) {
+    background-color: #242525;
+    overflow: hidden;
+}
+
+section:nth-of-type(4) > header {
+    text-align: center;
+}
+
+section:nth-of-type(4) > header h3 {
+    font-size: 2.5em;
+    margin: 30px 0px 0px 0px;
+}
+
+section:nth-of-type(4) > header p {
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+section:nth-of-type(4) form {
+    margin: 20px auto -60px auto;
+    width: 343px;
+    padding: 10px;
+    text-align: right;
+}
+
+section:nth-of-type(4) form > input, textarea {
+    border: none;
+    background: transparent;
+    color: #f3f3f3;
+    width: 100%;
+    padding-left: 15px;
+    border-bottom: 1px solid #f3f3f3;
+    font-weight: 500;
+    font-size: 1em;
+    line-height: 26px;
+}
+
+section:nth-of-type(4) > form input {
+    height: 43px;
+    margin-bottom: 30px;
+}
+section:nth-of-type(4) > form textarea {
+    height: 107px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+section:nth-of-type(4) > form input:focus, textarea:focus {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #4ee1a0;
+    opacity: 1; 
+}
+section:nth-of-type(4) form > button {
+    text-decoration: none;
+    line-height: 2.25;
+    letter-spacing: 1px;
+    background : transparent;
+    border: none;
+    border-bottom: 0.15rem solid #4ee1a0;
+    color: #f3f3f3;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 0px;
+    margin: 0px;
+}
+section:nth-of-type(4) form > button:hover {
+    color: #4ee1a0;
+}
+
+section:nth-of-type(4) > div {
+    height: 129px;
+    width: 530px;
+    background-image: url('./assets/images/pattern-rings.svg');
+    position: relative;
+    transform: translate(-350px, -88px);
+}
+
+section:nth-of-type(4) footer {
+    width: 154px;
+    height: auto;
+    margin: 60px auto 60px auto;
+}
+
+section:nth-of-type(4) footer h4 {
+    width: 154px;
+    text-align: center;
+    font-size: 1.5em;
+    margin: 0px auto 20px auto;
+}
+section:nth-of-type(4) footer ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0px auto;
+    padding: 0px;
+}
+section:nth-of-type(4) footer ul li {
+    cursor: pointer;
+}
+.green-color-hover:hover {
+    color: #4ee1a0;
+}
